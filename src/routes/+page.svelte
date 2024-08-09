@@ -1,4 +1,6 @@
 <script lang="ts">
+	import '../styles.css'
+
 	export let data
 	const theme = data.theme
 
@@ -28,8 +30,8 @@
 					</p>
 					<p>
 						<span
-							>Highly skilled Senior Developer with six years of expertise in software development
-							and a passion for crafting best practices code that delivers exceptional results.
+							>Highly skilled Senior Developer with 8 years of expertise in software development and
+							a passion for crafting best practices code that delivers exceptional results.
 						</span>
 					</p>
 				</td>
@@ -62,7 +64,7 @@
 						<span>EXPERIENCE</span>
 					</h1>
 					<h2>
-						<span>Principal Consultant/Senior Developer/Team Lead</span><span>&nbsp;</span><span
+						<span>Principal Consultant / Senior Developer</span><span>&nbsp;</span><span
 							>– <br />Bitovi,
 						</span><span>Chicago, IL (Remote)</span>
 					</h2>

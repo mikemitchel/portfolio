@@ -16,5 +16,14 @@ export const theme: Record<string, string> = {
 	/* accent */
 	'color-accent': `#a348e9`,
 	'color-accent-subtle': `#e9ecef`,
-	'color-accent-med': `rgb(132, 165, 197)`
+	'color-accent-med': `rgb(132, 165, 197)`,
+	/* background */
+	'color-bg-lighter': 'rgb(240, 241, 246)',
+	'color-bg-light': 'rgb(202, 216, 228)',
+	'color-bg-med': 'rgb(132, 165, 197)',
+	'color-bg-dark': 'rgb(36, 46, 66)',
+	/* layout */
+	'column-width': '42rem',
+	'column-margin-top': '4rem',
+	'border-radius': '6px'
 }
