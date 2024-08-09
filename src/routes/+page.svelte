@@ -213,14 +213,13 @@
 	}
 	.column {
 		display: flex;
-		flex-basis: calc(50% - 40px);
-		justify-content: center;
+		flex-basis: calc(50% - 60px);
 		flex-direction: column;
 	}
 	.row {
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
-		gap: 100px;
+		gap: 60px;
 	}
 </style>
