@@ -187,7 +187,7 @@
 					<p>
 						<span
 							>Javascript, NodeJS, ReactJS, Typescript, NextJS, GIT, PHP, Jest, Mocha, Chai, HTML5,
-							CSS3, LESS, SCSS, jQuery, Storybook, Docker, and AWS S3</span
+							CSS3, LESS, SCSS, PostGreSQL, MySQL, MongoDB, jQuery, Storybook, Docker, and AWS S3</span
 						>
 					</p>
 					<h1>
