@@ -3,6 +3,7 @@
 
 	export let data
 	const theme = data.theme
+	const resume = data.resume
 
 	$: themeStyles = `
 	<style class="theme-styles">
@@ -21,117 +22,48 @@
 </svelte:head>
 
 <div class="main">
-	<table>
-		<tbody class="container">
-			<tr class="row">
-				<td class="column">
-					<h1>Mike Mitchel</h1>
-					<p>
-						Highly skilled Senior Developer with 8 years of expertise in software development and a
-						passion for crafting best practices code that delivers exceptional results.
-					</p>
-				</td>
-				<td class="column top">
-					<a
-						href="https://www.google.com/url?q=http://linkedin.com/in/mikemitchel&sa=D&source=editors&ust=1701106343458640&usg=AOvVaw0cQEVJsxXwm_4PFPnQmCss"
-						>linkedin.com/in/mikemitchel</a
-					>
-
-					<a
-						href="https://www.google.com/url?q=http://github.com/mikemitchel&sa=D&source=editors&ust=1701106343459478&usg=AOvVaw1f3_EIljrXr9QzAjWeCCKL"
-						>github.com/mikemitchel</a
-					>
-					<p>
-						<a href="mailto:mike@mikemitchel.com">mike@mikemitchel.com</a>
-					</p>
-				</td>
-			</tr>
-			<tr class="row">
-				<td class="column">
-					<h2>EXPERIENCE</h2>
-					<h3>
-						Principal Consultant / Senior Developer&nbsp;<br />Bitovi (Chicago, IL Remote)
-						<div>June 2016 - Dec 2022</div>
-					</h3>
-					<ul>
-						<li>
-							Guided successful projects as the Principal Consultant for client stakeholders,
-							delivering high value software and tooling.
-						</li>
-						<li>Managed and mentored team members as a Senior Team Lead</li>
-						<li>Performed talent resource management and technical recruiting interviews</li>
-						<li>Delivered clean, readable, and maintainable code complete with tests</li>
-						<li>Automated testing via Continuous Integration and Deployment</li>
-						<li>Maintained documentation and best practices for the codebase</li>
-					</ul>
-					<h4>Client Projects</h4>
-					<ul>
-						<li>
-							KFC.com – customer order app (React, Typescript, Jest, NextJS), Refactored the entire
-							web app, improving test coverage by 30%.
-						</li>
-						<li>
-							A2JAuthor.com - multi-repo Access to Justice &nbsp;application with nearly 1 million
-							runs per year (CanJS, NodeJS, PHP, AMP stack), Full stack development across a suite
-							of 3 applications, Authoring Tool, Viewing Tool, and Document Assembly Tool
-						</li>
-						<li>
-							Epiqar.com – Medical video conference app for remote surgery and medical sales (full
-							stack - CanJS, NodeJS), Added high-quality snapshot feature allowing doctors to
-							capture key moments including on-screen annotations.
-						</li>
-						<li>CanJS.com&nbsp;- open source MVVM framework contributor</li>
-					</ul>
-					<h3>
-						Instructor &nbsp;<br />Makersquare (Austin, TX)
-						<div>Feb 2016 - May 2016</div>
-					</h3>
-
-					<ul>
-						<li>
-							Assistant Instructor to 2 boot camp cohorts, teaching the same fundamentals I had just
-							learned as well as developing an internal staffing app to record and manage student
-							instructor hours
-						</li>
-					</ul>
-					<h3>
-						Founder & Principal Consultant&nbsp;<br />Lab9 Inc (Chicago, IL)
-						<div>June 2009 - June 2016</div>
-					</h3>
-
-					<ul>
-						<li>
-							Built a successful IT consulting business by delivering exceptional service, creating
-							a strong referral pipeline
-						</li>
-						<li>Managed every aspect of the business while being the principal consultant</li>
-						<li>Sold the client list to pursue web development</li>
-					</ul>
-				</td>
-				<td class="column">
-					<h2>SKILLS</h2>
-					<p>
-						Javascript, NodeJS, ReactJS, Typescript, NextJS, GIT, PHP, Jest, Mocha, Chai, HTML5,
-						CSS3, LESS, SCSS, PostGreSQL, MySQL, MongoDB, jQuery, Storybook, Docker, and AWS S3
-					</p>
-					<h2>SOFT SKILLS</h2>
-					<p>
-						Strong Written and Verbal Communication, Emotional Intelligence, Stakeholder and Product
-						Owner Liaison, Project Management, Team Mentoring, Code Review, Consulting, Agile
-						Planning, Motivated Lifelong Learner
-					</p>
-					<h2>EDUCATION</h2>
-					<ul>
-						<li>
-							Makersquare, Dev Bootcamp, Austin, TX
-							<br />60 hr/week intensive Web Development bootcamp that involved best practices
-							fundamentals and building a greenfield project utilizing the YouTube API.
-						</li>
-					</ul>
-				</td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="bio">
+		<div>{resume.bio.name}</div>
+		<div>{resume.bio.intro}</div>
+	</div>
+	<div class="links>">
+		{#each resume.socials as social}
+			<div class="link">{social.name}: {social.link}</div>
+		{/each}
+	</div>
+	<div class="experience-container">
+		<div>Experience</div>
+		{#each resume.experience as job}
+			<div>{job.company}</div>
+			<div>{job.dates}</div>
+			<div>{job.role}</div>
+			{#each job.highlights as highlight}
+				<div>{highlight.item}</div>
+			{/each}
+			{#each job.projects as project}
+				<div>Name: {project.name}</div>
+				<div>Stack: {project.stack}</div>
+				<div>{project.details}</div>
+			{/each}
+		{/each}
+	</div>
+	<div class="skills">
+		{#each resume.skills as skill}
+			{skill}
+		{/each}
+	</div>
+	<div class="softSkills">
+		{#each resume.softSkills as softSkill}
+			{softSkill}
+		{/each}
+	</div>
+	<div class="education">
+		{#each resume.education as edu}
+			<div>{edu.school}</div>
+			<div>{edu.location}</div>
+			<div>{edu.study}</div>
+		{/each}
+	</div>
 </div>
 
 <style>
@@ -155,6 +87,6 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
-		gap: 30px;
+		gap: 10px;
 	}
 </style>
