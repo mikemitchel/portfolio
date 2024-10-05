@@ -35,27 +35,19 @@
 						</span>
 					</p>
 				</td>
-				<td class="column">
+				<td class="column top">
+					<a
+						href="https://www.google.com/url?q=http://linkedin.com/in/mikemitchel&sa=D&source=editors&ust=1701106343458640&usg=AOvVaw0cQEVJsxXwm_4PFPnQmCss"
+						>linkedin.com/in/mikemitchel</a
+					>
+
+					<a
+						href="https://www.google.com/url?q=http://github.com/mikemitchel&sa=D&source=editors&ust=1701106343459478&usg=AOvVaw1f3_EIljrXr9QzAjWeCCKL"
+						>github.com/mikemitchel</a
+					>
 					<p>
-						<span
-							><a
-								href="https://www.google.com/url?q=http://linkedin.com/in/mikemitchel&sa=D&source=editors&ust=1701106343458640&usg=AOvVaw0cQEVJsxXwm_4PFPnQmCss"
-								>linkedin.com/in/mikemitchel</a
-							></span
-						>
+						<a href="mailto:mike@mikemitchel.com">mike@mikemitchel.com</a>
 					</p>
-					<p>
-						<span
-							><a
-								href="https://www.google.com/url?q=http://github.com/mikemitchel&sa=D&source=editors&ust=1701106343459478&usg=AOvVaw1f3_EIljrXr9QzAjWeCCKL"
-								>github.com/mikemitchel</a
-							></span
-						>
-					</p>
-					<p>
-						<span><a href="mailto:mike@mikemitchel.com">mike@mikemitchel.com</a></span>
-					</p>
-					<p><span>(312) 344-0036</span></p>
 				</td>
 			</tr>
 			<tr class="row">
@@ -213,6 +205,11 @@
 		flex-wrap: wrap;
 		flex-direction: row;
 	}
+
+	.top {
+		margin-top: 20px;
+		text-align: right;
+	}
 	.column {
 		display: flex;
 		flex-basis: calc(50% - 60px);
@@ -222,6 +219,6 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
-		gap: 60px;
+		gap: 30px;
 	}
 </style>

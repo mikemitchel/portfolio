@@ -2,7 +2,7 @@ export const theme: Record<string, string> = {
 	/* font and text */
 	'font-body': `Arial, -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif`,
 	'font-mono': `'Fira Mono', monospace`,
-	'font-size': `16px`,
+	'font-size': `14px`,
 	'color-text': `#323336`,
 	'color-text-light': `#dde9f8`,
 	/* main colors */
