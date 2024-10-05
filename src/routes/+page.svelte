@@ -51,24 +51,20 @@
 					<h2>EXPERIENCE</h2>
 					<h3>
 						Principal Consultant / Senior Developer&nbsp;<br />Bitovi (Chicago, IL Remote)
+						<div>June 2016 - Dec 2022</div>
 					</h3>
-					<h4>June 2016 - Dec 2022</h4>
-					<p>Managed multiple client projects</p>
 					<ul>
 						<li>
 							Guided successful projects as the Principal Consultant for client stakeholders,
 							delivering high value software and tooling.
 						</li>
 						<li>Managed and mentored team members as a Senior Team Lead</li>
-						<li>Performed resource management and technical recruiting interviews</li>
-					</ul>
-					<p>Championed and delivered best practices code</p>
-					<ul>
+						<li>Performed talent resource management and technical recruiting interviews</li>
 						<li>Delivered clean, readable, and maintainable code complete with tests</li>
 						<li>Automated testing via Continuous Integration and Deployment</li>
 						<li>Maintained documentation and best practices for the codebase</li>
 					</ul>
-					<p>Client Projects</p>
+					<h4>Client Projects</h4>
 					<ul>
 						<li>
 							KFC.com – customer order app (React, Typescript, Jest, NextJS), Refactored the entire
@@ -86,8 +82,11 @@
 						</li>
 						<li>CanJS.com&nbsp;- open source MVVM framework contributor</li>
 					</ul>
-					<h3>Instructor &nbsp;<br />Makersquare (Austin, TX)</h3>
-					<h4>Feb 2016 - May 2016</h4>
+					<h3>
+						Instructor &nbsp;<br />Makersquare (Austin, TX)
+						<div>Feb 2016 - May 2016</div>
+					</h3>
+
 					<ul>
 						<li>
 							Assistant Instructor to 2 boot camp cohorts, teaching the same fundamentals I had just
@@ -95,8 +94,11 @@
 							instructor hours
 						</li>
 					</ul>
-					<h3>Founder & Principal Consultant&nbsp;<br />Lab9 Inc (Chicago, IL)</h3>
-					<h4>June 2009 - June 2016</h4>
+					<h3>
+						Founder & Principal Consultant&nbsp;<br />Lab9 Inc (Chicago, IL)
+						<div>June 2009 - June 2016</div>
+					</h3>
+
 					<ul>
 						<li>
 							Built a successful IT consulting business by delivering exceptional service, creating
