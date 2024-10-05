@@ -107,14 +107,6 @@
 					</ul>
 				</td>
 				<td class="column">
-					<h2>EDUCATION</h2>
-					<ul>
-						<li>
-							Makersquare, Dev Bootcamp, Austin, TX
-							<br />60 hr/week intensive Web Development bootcamp that involved best practices
-							fundamentals and building a greenfield project utilizing the YouTube API.
-						</li>
-					</ul>
 					<h2>SKILLS</h2>
 					<p>
 						Javascript, NodeJS, ReactJS, Typescript, NextJS, GIT, PHP, Jest, Mocha, Chai, HTML5,
@@ -126,6 +118,14 @@
 						Owner Liaison, Project Management, Team Mentoring, Code Review, Consulting, Agile
 						Planning, Motivated Lifelong Learner
 					</p>
+					<h2>EDUCATION</h2>
+					<ul>
+						<li>
+							Makersquare, Dev Bootcamp, Austin, TX
+							<br />60 hr/week intensive Web Development bootcamp that involved best practices
+							fundamentals and building a greenfield project utilizing the YouTube API.
+						</li>
+					</ul>
 				</td>
 			</tr>
 		</tbody>
