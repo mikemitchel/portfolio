@@ -22,56 +22,88 @@
 </svelte:head>
 
 <div class="main">
-	<div class="bio">
-		<div>{resume.bio.name}</div>
-		<div>{resume.bio.intro}</div>
+	<div class="row">
+		<div class="column">
+			<div class="bio section">
+				<div>{resume.bio.name}</div>
+				<div class="sub-section">{resume.bio.intro}</div>
+			</div>
+			<div class="links section>">
+				<div>Sites</div>
+				{#each resume.socials as social}
+					<div class="link sub-section">{social.name}: {social.link}</div>
+				{/each}
+			</div>
+			<div class="skills section">
+				<div>Skills</div>
+				{#each resume.skills as skill}
+					{skill}
+				{/each}
+			</div>
+			<div class="softSkills section">
+				<div>Soft Skills</div>
+				{#each resume.softSkills as softSkill}
+					{softSkill}
+				{/each}
+			</div>
+			<div class="education section">
+				<div>Education</div>
+				{#each resume.education as edu}
+					<div>{edu.school}</div>
+					<div>{edu.location}</div>
+					<div>{edu.study}</div>
+				{/each}
+			</div>
+		</div>
+		<div class="column">
+			<div class="experience section">
+				<div>Experience</div>
+				{#each resume.experience as job}
+					<div class="job sub-section">
+						<div>{job.company}</div>
+						<div>{job.dates}</div>
+						<div>{job.role}</div>
+						{#each job.highlights as highlight}
+							<div class="sub-section">{highlight.item}</div>
+						{/each}
+						{#each job.projects as project}
+							<div>Projects</div>
+							<div class="project sub-section">
+								<div>Project: {project.name}</div>
+								<div>Stack: {project.stack}</div>
+								<div>{project.details}</div>
+							</div>
+						{/each}
+					</div>
+				{/each}
+			</div>
+		</div>
 	</div>
-	<div class="links>">
-		{#each resume.socials as social}
-			<div class="link">{social.name}: {social.link}</div>
-		{/each}
-	</div>
-	<div class="experience-container">
-		<div>Experience</div>
-		{#each resume.experience as job}
-			<div>{job.company}</div>
-			<div>{job.dates}</div>
-			<div>{job.role}</div>
-			{#each job.highlights as highlight}
-				<div>{highlight.item}</div>
-			{/each}
-			{#each job.projects as project}
-				<div>Name: {project.name}</div>
-				<div>Stack: {project.stack}</div>
-				<div>{project.details}</div>
-			{/each}
-		{/each}
-	</div>
-	<div class="skills">
-		{#each resume.skills as skill}
-			{skill}
-		{/each}
-	</div>
-	<div class="softSkills">
-		{#each resume.softSkills as softSkill}
-			{softSkill}
-		{/each}
-	</div>
-	<div class="education">
-		{#each resume.education as edu}
-			<div>{edu.school}</div>
-			<div>{edu.location}</div>
-			<div>{edu.study}</div>
-		{/each}
-	</div>
+	<div class="row"></div>
 </div>
 
 <style>
-	.container {
+	.main {
 		min-height: 100%;
 		display: flex;
 		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.section {
+		margin-top: 2rem;
+	}
+
+	.sub-section {
+		margin-top: 1rem;
+	}
+
+	.row {
+		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
 	}
 
 	.top {
@@ -80,13 +112,8 @@
 	}
 	.column {
 		display: flex;
-		flex-basis: calc(50% - 60px);
 		flex-direction: column;
-	}
-	.row {
-		display: flex;
-		justify-content: center;
-		flex-direction: row;
-		gap: 10px;
+		flex-basis: 100%;
+		flex: 1;
 	}
 </style>

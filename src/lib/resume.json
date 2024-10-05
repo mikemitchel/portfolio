@@ -84,10 +84,7 @@
 			"role": "Student Full Stack Bootcamp Instructor",
 			"highlights": [
 				{
-					"item": "Assistant Instructor to 2 boot camp cohorts, teaching the same fundamentals I had just learned as well"
-				},
-				{
-					"item": "Delivered clean, readable, and maintainable code complete with Automated testing via Continuous Integration and Deployment while maintaining documentation and best practices for the codebase."
+					"item": "Assistant Instructor to 2 boot camp cohorts, teaching new devs the fundamentals of Full Stack Development."
 				}
 			],
 			"projects": [
@@ -104,32 +101,10 @@
 			"role": "Founder & Principal Consultant",
 			"highlights": [
 				{
-					"item": "Built a successful IT consulting business by delivering exceptional service and value, creating a strong referral pipeline. Sold the client list to pursue web development."
-				},
-				{
-					"item": "Provided remote and onsite IT consulting services to small and medium business throughout Chicago and the surrounding suburbs."
-				},
-				{
-					"item": "Sold established client list to pursue a career in Software Development"
+					"item": "Built a successful IT consulting business by delivering exceptional value through superior System Administration, Networking, and HelpDesk services, creating a strong referral pipeline. Sold the client list to pursue web development."
 				}
 			],
-			"projects": [
-				{
-					"name": "System Administration",
-					"stack": "Windows, MacOS, and Linux",
-					"details": "Consulting, setup and support of servers and hosting services"
-				},
-				{
-					"name": "Help Desk Support",
-					"stack": "Windows, MacOS, and Linux",
-					"details": "Remote and onsite support of servers, laptops and desktops"
-				},
-				{
-					"name": "Network Support",
-					"stack": "WIFI, LAN, Routers, Firewalls, Nodes",
-					"details": "Consulting, setup and support of web and local networks and their services."
-				}
-			]
+			"projects": []
 		}
 	],
 	"skills": [
