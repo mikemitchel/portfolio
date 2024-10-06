@@ -22,17 +22,21 @@
 </svelte:head>
 
 <div class="main">
+	<h1>Mike Mitchel - Principal Consultant & Senior Software Developer</h1>
+	<div class="blurb row">
+		<div class="bio section">
+			<div class="sub-section">{resume.bio.intro}</div>
+		</div>
+	</div>
 	<div class="row">
 		<div class="column">
-			<div class="bio section">
-				<div>{resume.bio.name}</div>
-				<div class="sub-section">{resume.bio.intro}</div>
-			</div>
-			<div class="links section>">
+			<div class="links section">
 				<div>Sites</div>
-				{#each resume.socials as social}
-					<div class="link sub-section">{social.name}: {social.link}</div>
-				{/each}
+				<div class="sub-section">
+					{#each resume.socials as social}
+						<div class="link">{social.name}: {social.link}</div>
+					{/each}
+				</div>
 			</div>
 			<div class="skills section">
 				<div>Skills</div>
@@ -59,15 +63,16 @@
 			<div class="experience section">
 				<div>Experience</div>
 				{#each resume.experience as job}
-					<div class="job sub-section">
+					<div class="job-details sub-section">
 						<div>{job.company}</div>
-						<div>{job.dates}</div>
 						<div>{job.role}</div>
+						<div>{job.dates}</div>
+					</div>
+					<div class="sub-section">
 						{#each job.highlights as highlight}
 							<div class="sub-section">{highlight.item}</div>
 						{/each}
 						{#each job.projects as project}
-							<div>Projects</div>
 							<div class="project sub-section">
 								<div>Project: {project.name}</div>
 								<div>Stack: {project.stack}</div>
@@ -79,7 +84,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="row"></div>
 </div>
 
 <style>
@@ -89,6 +93,10 @@
 		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: flex-start;
+	}
+
+	.blurb {
+		margin-bottom: 10px;
 	}
 
 	.section {
