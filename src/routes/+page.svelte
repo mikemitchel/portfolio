@@ -76,6 +76,8 @@
 							<div class="project sub-section">
 								<div>Project: {project.name}</div>
 								<div>Stack: {project.stack}</div>
+							</div>
+							<div class="project-details sub-section">
 								<div>{project.details}</div>
 							</div>
 						{/each}
