@@ -40,23 +40,29 @@
 			</div>
 			<div class="skills section">
 				<div>Skills</div>
-				{#each resume.skills as skill}
-					{skill}
-				{/each}
+				<div class="sub-section">
+					{#each resume.skills as skill}
+						{skill}
+					{/each}
+				</div>
 			</div>
 			<div class="softSkills section">
 				<div>Soft Skills</div>
-				{#each resume.softSkills as softSkill}
-					{softSkill}
-				{/each}
+				<div class="sub-section">
+					{#each resume.softSkills as softSkill}
+						{softSkill}
+					{/each}
+				</div>
 			</div>
 			<div class="education section">
 				<div>Education</div>
-				{#each resume.education as edu}
-					<div>{edu.school}</div>
-					<div>{edu.location}</div>
-					<div>{edu.study}</div>
-				{/each}
+				<div class="sub-section">
+					{#each resume.education as edu}
+						<div>{edu.school}</div>
+						<div>{edu.location}</div>
+						<div>{edu.study}</div>
+					{/each}
+				</div>
 			</div>
 		</div>
 		<div class="column">
@@ -114,6 +120,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		width: 100%;
+		column-gap: 20px;
 	}
 
 	.column {
