@@ -1,0 +1,123 @@
+{
+	"bio": {
+		"name": "Mike Mitchel",
+		"intro": "Highly skilled Principal Consultant & Senior Developer with 10 years experience of following a passion for product discovery, project planning, team management, and crafting robust & easy to maintain code that delivers exceptional results."
+	},
+	"socials": [
+		{
+			"name": "Github",
+			"link": "https://github.com/mikemitchel",
+			"logo": ""
+		},
+		{
+			"name": "LinkedIn",
+			"link": "https://linkedin.com/in/mikemitchel",
+			"logo": ""
+		},
+		{
+			"name": "Home",
+			"link": "https://www.mikemitchel.com",
+			"logo": ""
+		}
+	],
+	"experience": [
+		{
+			"company": "Nomadik Labs LLC - Ann Arbor, MI",
+			"dates": "June 2024 - Present",
+			"role": "Founder & Principal Consultant",
+			"highlights": [
+				{
+					"item": "Full stack software consulting and development."
+				}
+			],
+			"projects": [
+				{
+					"name": "CALI.org",
+					"stack": "CanJS, NodeJS, PHP, Bootstrap, jQuery, AMP stack",
+					"details": "Feature add and bug fix for A2J Viewer main hosting partner, implementing type protections for Authoring of legal aid Guided Interviews."
+				},
+				{
+					"name": "BCBC.bike Shop App",
+					"stack": "Sveltekit, Typescript, CSS",
+					"details": "Greenfield Full Stack project to create an improved Shop App for bike co-op non-profit, with focus on mobile first responsive design and usability."
+				}
+			]
+		},
+		{
+			"company": "Bitovi, Inc",
+			"dates": "June 2016 - Dec 2022",
+			"role": "Principal Consultant & Senior Developer",
+			"highlights": [
+				{
+					"item": "Guided successful projects as the Principal Consultant for main client stakeholders, delivering high value software and tooling. Managed client and consultant team members as a Senior Developer Team Lead, providing code reviews, best code practices mentorship, career development training, and guidance on maintaing work/life balance."
+				},
+				{
+					"item": "Delivered clean, readable, and maintainable code complete with Automated testing via Continuous Integration and Deployment while maintaining documentation and best practices for the codebase."
+				}
+			],
+			"projects": [
+				{
+					"name": "KFC.com - KFC Order App",
+					"stack": "React, Typescript, Jest, NextJS, Storybook, GraphQL",
+					"details": "KFC customer order app, Refactored the entire web app, improving test coverage by 30%."
+				},
+				{
+					"name": "A2JAuthor.com - Access to Justice App Suite",
+					"stack": "CanJS, NodeJS, PHP, Bootstrap, jQuery, AMP stack",
+					"details": "Multi-repo Access to Justice application with nearly 1 million runs per year, Full stack development across a suite of 3 applications, Authoring Tool, Viewing Tool, and Document Assembly Tool"
+				},
+				{
+					"name": "Epiqar.com - Surgical Sales and Collaboration Video Conference App",
+					"stack": " CanJS, NodeJS, AWS S3, Amazon SQS, HTML5 Video/Audio/Canvas",
+					"details": "Medical video conference app for remote surgery and medical sales, Added high-quality snapshot feature allowing doctors to capture key moments including on-screen annotations"
+				},
+				{
+					"name": "CanJS.com - Open Source client-side JavaScript architectural libraries",
+					"stack": "Vanilla Javascript",
+					"details": "Direct feature and bug-fix open source contributions to a full feature Javascript framework and set of tools."
+				}
+			]
+		},
+		{
+			"company": "MakerSquare (now Galvanize) - Austin, TX",
+			"dates": "Feb 2016 - May 2016",
+			"role": "Student Full Stack Bootcamp Instructor",
+			"highlights": [
+				{
+					"item": "Assistant Instructor to 2 boot camp cohorts, teaching new devs the fundamentals of Full Stack Development."
+				}
+			],
+			"projects": [
+				{
+					"name": "Internal Employee Schedule App",
+					"stack": "Mithril JS (https://mithril.js.org/)",
+					"details": "Staffing app to record and manage student instructor hours, duties, and weekly schedule and responsibilities."
+				}
+			]
+		},
+		{
+			"company": "Lab9 Inc - Chicago, IL",
+			"dates": "June 2009 - June 2016",
+			"role": "Founder & Principal Consultant",
+			"highlights": [
+				{
+					"item": "Built a successful IT consulting business by delivering exceptional value through superior System Administration, Networking, and HelpDesk services, creating a strong referral pipeline. Sold the client list to pursue web development."
+				}
+			],
+			"projects": []
+		}
+	],
+	"skills": [
+		"Javascript, NodeJS, ReactJS, Typescript, NextJS, GIT, PHP, Jest, Mocha, Chai, HTML5, CSS3, LESS, SCSS, PostGreSQL, MySQL, MongoDB, jQuery, Storybook, Docker, AWS S3"
+	],
+	"softSkills": [
+		"Strong Written and Verbal Communication, Emotional Intelligence, Stakeholder and Product Owner Liaison, Project Management, Team Mentoring, Code Review, Consulting, Agile Planning, Motivated Lifelong Learner"
+	],
+	"education": [
+		{
+			"school": "Makersquare Full Stack JS Bootcamp",
+			"location": "Austin, TX",
+			"study": "60 hr/week intensive Web Development bootcamp that involved best practices fundamentals and building a greenfield project utilizing the YouTube API."
+		}
+	]
+}
