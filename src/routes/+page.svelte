@@ -116,10 +116,6 @@
 		width: 100%;
 	}
 
-	.top {
-		margin-top: 20px;
-		text-align: right;
-	}
 	.column {
 		display: flex;
 		flex-direction: column;
