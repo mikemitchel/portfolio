@@ -22,50 +22,29 @@
 </svelte:head>
 
 <div class="main">
-	<h1>Mike Mitchel - Principal Consultant & Senior Software Developer</h1>
-	<div class="blurb row">
-		<div class="bio section">
-			<div class="sub-section">{resume.bio.intro}</div>
+	<div class="header">
+		<div class="info row">
+			<div class="name">
+				<div>Mike Mitchel</div>
+				<small>Principal Consultant & Senior Software Developer</small>
+			</div>
+
+			<div class="socials">
+				{#each resume.socials as social}
+					<div class="link">{social.name}: {social.link}</div>
+				{/each}
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="bio">
+				<div class="sub-section">{resume.bio.intro}</div>
+			</div>
 		</div>
 	</div>
+
 	<div class="row">
-		<div class="column">
-			<div class="links section">
-				<div>Sites</div>
-				<div class="sub-section">
-					{#each resume.socials as social}
-						<div class="link">{social.name}: {social.link}</div>
-					{/each}
-				</div>
-			</div>
-			<div class="skills section">
-				<div>Skills</div>
-				<div class="sub-section">
-					{#each resume.skills as skill}
-						{skill}
-					{/each}
-				</div>
-			</div>
-			<div class="softSkills section">
-				<div>Soft Skills</div>
-				<div class="sub-section">
-					{#each resume.softSkills as softSkill}
-						{softSkill}
-					{/each}
-				</div>
-			</div>
-			<div class="education section">
-				<div>Education</div>
-				<div class="sub-section">
-					{#each resume.education as edu}
-						<div>{edu.school}</div>
-						<div>{edu.location}</div>
-						<div>{edu.study}</div>
-					{/each}
-				</div>
-			</div>
-		</div>
-		<div class="column">
+		<div class="left column">
 			<div class="experience section">
 				<div>Experience</div>
 				{#each resume.experience as job}
@@ -91,6 +70,28 @@
 				{/each}
 			</div>
 		</div>
+		<div class="right column">
+			<div class="skills section">
+				<div>Tech Skills</div>
+				<div class="sub-section">
+					{#each resume.skills as skill}
+						<div class="skill">
+							{skill}
+						</div>
+					{/each}
+				</div>
+			</div>
+			<div class="softSkills section">
+				<div>Soft Skills</div>
+				<div class="sub-section">
+					{#each resume.softSkills as softSkill}
+						<div class="skill">
+							{softSkill}
+						</div>
+					{/each}
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -100,11 +101,23 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-		justify-content: flex-start;
 	}
 
-	.blurb {
+	.header {
 		margin-bottom: 10px;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.name {
+		margin-right: auto;
+	}
+
+	.socials {
+		margin-left: auto;
 	}
 
 	.section {
@@ -118,15 +131,19 @@
 	.row {
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
-		width: 100%;
 		column-gap: 20px;
 	}
 
 	.column {
 		display: flex;
 		flex-direction: column;
-		flex-basis: 100%;
 		flex: 1;
+	}
+	.left {
+		flex: 2;
+	}
+
+	.skill::after {
+		content: ', ';
 	}
 </style>

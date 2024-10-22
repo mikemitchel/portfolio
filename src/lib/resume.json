@@ -1,22 +1,17 @@
 {
 	"bio": {
 		"name": "Mike Mitchel",
-		"intro": "Highly skilled Principal Consultant & Senior Developer with 10 years experience of following a passion for product discovery, project planning, team management, and crafting robust & easy to maintain code that delivers exceptional results."
+		"intro": "Highly skilled Principal Consultant & Senior Developer with 10 years experience of following a passion for product discovery, project planning, team management, and crafting robust & easy to maintain code that delivers exceptional value."
 	},
 	"socials": [
-		{
-			"name": "Github",
-			"link": "https://github.com/mikemitchel",
-			"logo": ""
-		},
 		{
 			"name": "LinkedIn",
 			"link": "https://linkedin.com/in/mikemitchel",
 			"logo": ""
 		},
 		{
-			"name": "Home",
-			"link": "https://www.mikemitchel.com",
+			"name": "Github",
+			"link": "https://github.com/mikemitchel",
 			"logo": ""
 		}
 	],
@@ -43,6 +38,18 @@
 				}
 			]
 		},
+		{
+			"company": "Career Break",
+			"dates": "Dec 2022 - June 2024",
+			"role": "Health and well-being",
+			"highlights": [
+				{
+					"item": "I took a voluntary 12 month sabbatical to focus on family and self and cannot recommend this practice enough. Want to talk about my experience? Please feel free to shoot me a message as I would love to chat about it."
+				}
+			],
+			"projects": []
+		},
+
 		{
 			"company": "Bitovi, Inc",
 			"dates": "June 2016 - Dec 2022",
@@ -108,10 +115,39 @@
 		}
 	],
 	"skills": [
-		"Javascript, NodeJS, ReactJS, Typescript, NextJS, GIT, PHP, Jest, Mocha, Chai, HTML5, CSS3, LESS, SCSS, PostGreSQL, MySQL, MongoDB, jQuery, Storybook, Docker, AWS S3"
+		"Javascript",
+		"NodeJS",
+		"ReactJS",
+		"Typescript",
+		"NextJS",
+		"GIT",
+		"PHP",
+		"Jest",
+		"Mocha",
+		"Chai",
+		"HTML5",
+		"CSS3",
+		"LESS",
+		"SCSS",
+		"PostGreSQL",
+		"MySQL",
+		"MongoDB",
+		"jQuery",
+		"Storybook",
+		"Docker",
+		"AWS S3"
 	],
 	"softSkills": [
-		"Strong Written and Verbal Communication, Emotional Intelligence, Stakeholder and Product Owner Liaison, Project Management, Team Mentoring, Code Review, Consulting, Agile Planning, Motivated Lifelong Learner"
+		"Strong Written and Verbal Communication",
+		"Emotional Intelligenc",
+		"Product Owner",
+		"Project Management",
+		"Mentoring",
+		"Code Review",
+		"Consulting",
+		"Agile",
+		"Sprint Planning",
+		"Motivated Lifelong Learner"
 	],
 	"education": [
 		{
