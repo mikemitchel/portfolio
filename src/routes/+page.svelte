@@ -22,6 +22,7 @@
 </svelte:head>
 
 <div class="main">
+	<h1>I'm learning <a href="https://svelte.dev/">Sveltekit!</a></h1>
 	<div class="header">
 		<div class="row">
 			<div class="name">
