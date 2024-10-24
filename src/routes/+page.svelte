@@ -32,7 +32,12 @@
 
 			<div class="socials">
 				{#each resume.socials as social}
-					<div class="link">{social.name}: {social.link}</div>
+					<div class="link">
+						<a href={social.link} target="_blank">
+							<img alt="icon" class="icon" src={social.icon} />
+							{social.link}
+						</a>
+					</div>
 				{/each}
 			</div>
 		</div>
@@ -50,7 +55,7 @@
 				<h2>Experience</h2>
 				{#each resume.experience as job}
 					<div class="job-details sub-section">
-						<div>{job.company}</div>
+						<h3>{job.company}</h3>
 						<div>{job.role}</div>
 						<div>{job.dates}</div>
 					</div>
@@ -59,12 +64,15 @@
 							<div class="sub-section">{highlight.item}</div>
 						{/each}
 						{#each job.projects as project}
-							<div class="project sub-section">
-								<div>Project: {project.name}</div>
-								<div>Stack: {project.stack}</div>
-							</div>
-							<div class="project-details sub-section">
-								<div>{project.details}</div>
+							<div class="sub-section">
+								<div class="project">
+									<h4>Project</h4>
+									{project.details}
+								</div>
+								<div class="stack">
+									<h4>Stack</h4>
+									{project.stack}
+								</div>
 							</div>
 						{/each}
 					</div>
@@ -97,6 +105,17 @@
 </div>
 
 <style>
+	h1 {
+		align-self: center;
+	}
+
+	h4 {
+		margin: 0;
+		float: left;
+	}
+	h4::after {
+		content: ':\00a0';
+	}
 	.main {
 		min-height: 100%;
 		display: flex;
@@ -108,17 +127,16 @@
 		margin-bottom: 10px;
 	}
 
-	.info {
-		display: flex;
-		flex-direction: column;
-	}
-
 	.name {
 		margin-right: auto;
 	}
 
 	.socials {
 		margin-left: auto;
+	}
+
+	.icon {
+		height: 1rem;
 	}
 
 	.section {
