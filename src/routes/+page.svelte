@@ -1,11 +1,11 @@
 <script lang="ts">
 	import '../styles.css'
 
-	export let data
+	let { data } = $props()
 	const theme = data.theme
 	const resume = data.resume
 
-	$: themeStyles = `
+	let themeStyles = $derived(`
 	<style class="theme-styles">
 		:root {
 			${Object.keys(theme).reduce((str: string, key: string) => {
@@ -13,7 +13,7 @@
 			}, '')}
 		}
 	</style>
-	`
+	`)
 </script>
 
 <svelte:head>
