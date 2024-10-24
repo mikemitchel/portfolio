@@ -7,12 +7,17 @@
 		{
 			"name": "LinkedIn",
 			"link": "https://linkedin.com/in/mikemitchel",
-			"logo": ""
+			"icon": "linkedin.png"
 		},
 		{
 			"name": "Github",
 			"link": "https://github.com/mikemitchel",
-			"logo": ""
+			"icon": "github.png"
+		},
+		{
+			"name": "Personal",
+			"link": "https://mikemitchel.com",
+			"icon": "favicon.png"
 		}
 	],
 	"experience": [
@@ -29,12 +34,12 @@
 				{
 					"name": "CALI.org",
 					"stack": "CanJS, NodeJS, PHP, Bootstrap, jQuery, AMP stack",
-					"details": "Feature add and bug fix for A2J Viewer main hosting partner, implementing type protections for Authoring of legal aid Guided Interviews."
+					"details": "Added Authoring feature to guide best authoring practices, while implementing type protections to prevent errors during document assembly."
 				},
 				{
 					"name": "BCBC.bike Shop App",
 					"stack": "Sveltekit, Typescript, CSS",
-					"details": "Greenfield Full Stack project to create an improved Shop App for bike co-op non-profit, with focus on mobile first responsive design and usability."
+					"details": "Greenfield Sveltekit Full Stack project to create an improved Shop App for bike co-op non-profit, with focus on mobile first responsive design and usability."
 				}
 			]
 		},
@@ -57,9 +62,6 @@
 			"highlights": [
 				{
 					"item": "Guided successful projects as the Principal Consultant for main client stakeholders, delivering high value software and tooling. Managed client and consultant team members as a Senior Developer Team Lead, providing code reviews, best code practices mentorship, career development training, and guidance on maintaing work/life balance."
-				},
-				{
-					"item": "Delivered clean, readable, and maintainable code complete with Automated testing via Continuous Integration and Deployment while maintaining documentation and best practices for the codebase."
 				}
 			],
 			"projects": [
@@ -80,8 +82,8 @@
 				},
 				{
 					"name": "CanJS.com - Open Source client-side JavaScript architectural libraries",
-					"stack": "Vanilla Javascript",
-					"details": "Direct feature and bug-fix open source contributions to a full feature Javascript framework and set of tools."
+					"stack": "Javascript, HTML, DOM",
+					"details": "Direct feature and bug-fix open source contributions to a full feature Javascript framework and set of tools including CanJS, DoneJS, StealJS and testing stack."
 				}
 			]
 		},
