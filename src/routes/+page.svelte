@@ -18,38 +18,33 @@
 
 <svelte:head>
 	<!-- eslint-disable-next-line -->
-	<!-- {@html themeStyles} -->
+	{@html themeStyles}
 </svelte:head>
 
 <div class="main">
-	<h1>I'm learning <a href="https://svelte.dev/" target="_blank">Sveltekit!</a></h1>
 	<div class="header">
-		<div class="row">
-			<div class="name">
-				<div>Mike Mitchel</div>
-				<small>Principal Consultant & Senior Software Developer</small>
-			</div>
-
-			<div class="socials">
-				{#each resume.socials as social}
-					<div class="link">
-						<a href={social.link} target="_blank">
-							<img alt="icon" class="icon" src={social.icon} />
-							{social.link}
-						</a>
-					</div>
-				{/each}
-			</div>
+		<div class="name">
+			<h1>Mike Mitchel</h1>
+			<small>Principal Consultant & Senior Software Developer</small>
 		</div>
 
-		<div class="row">
-			<div class="bio">
-				<div class="sub-section">{resume.bio.intro}</div>
-			</div>
+		<div class="socials">
+			{#each resume.socials as social}
+				<a class="social-link" href={social.link} target="_blank">
+					<img alt="icon" class="icon" src={social.icon} />
+					<span class="link">{social.link}</span>
+				</a>
+			{/each}
 		</div>
 	</div>
 
 	<div class="row">
+		<div class="bio">
+			<div class="sub-section">{resume.bio.intro}</div>
+		</div>
+	</div>
+
+	<main class="row">
 		<div class="left column">
 			<div class="experience section">
 				<h2>Experience</h2>
@@ -101,20 +96,29 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</main>
 </div>
 
 <style>
 	h1 {
 		align-self: center;
 	}
-
+	h1,
+	h2,
+	h3,
 	h4 {
-		margin: 0;
+		margin: 0px;
+	}
+	h4 {
 		float: left;
 	}
 	h4::after {
 		content: ':\00a0';
+	}
+	.social-link {
+		display: flex;
+		align-items: center;
+		gap: 0.25em;
 	}
 	.main {
 		min-height: 100%;
@@ -124,6 +128,9 @@
 	}
 
 	.header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 		margin-bottom: 10px;
 	}
 
@@ -136,7 +143,19 @@
 	}
 
 	.icon {
-		height: 1rem;
+		width: 1em;
+	}
+
+	@media (max-width: 700px) {
+		.link {
+			display: none;
+		}
+		main.row {
+			display: block;
+		}
+		.social-link {
+			display: block;
+		}
 	}
 
 	.section {
@@ -150,7 +169,7 @@
 	.row {
 		display: flex;
 		flex-direction: row;
-		column-gap: 20px;
+		column-gap: 10px;
 	}
 
 	.column {
@@ -158,11 +177,10 @@
 		flex-direction: column;
 	}
 	.right {
-		flex: 1;
+		flex-basis: 20ch;
+		flex-shrink: 0;
 	}
-	.left {
-		flex: 2;
-	}
+
 	.skills {
 		display: inline-flex;
 		flex-wrap: wrap;
