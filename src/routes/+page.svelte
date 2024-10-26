@@ -54,7 +54,7 @@
 							<h3>{job.company}</h3>
 							<small>{job.location}</small>
 						</span>
-						<div>{job.role}</div>
+						<h4>{job.role}</h4>
 						<div>{job.dates}</div>
 					</div>
 					<div class="sub-section">
