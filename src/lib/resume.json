@@ -17,7 +17,8 @@
 	],
 	"experience": [
 		{
-			"company": "Nomadik Labs LLC - Ann Arbor, MI",
+			"company": "Nomadik Labs LLC",
+			"location": "Ann Arbor, MI",
 			"dates": "Sep 2023 - Present",
 			"role": "Founder & Principal Consultant",
 			"highlights": [
@@ -39,9 +40,10 @@
 			]
 		},
 		{
-			"company": "Career Break - Pacific NW",
+			"company": "Career Break",
+			"location": "Pacific NW",
 			"dates": "Dec 2022 - Sept 2023",
-			"role": "Health and well-being",
+			"role": "Health and well-being / Freelance",
 			"highlights": [
 				{
 					"item": "I took a voluntary 9 month sabbatical to focus on family and self and cannot recommend this practice enough. Want to talk about my experience? Please feel free to shoot me a message as I would love to chat about it."
@@ -51,7 +53,8 @@
 		},
 
 		{
-			"company": "Bitovi, Inc - Chicago, IL (remote)",
+			"company": "Bitovi, Inc",
+			"location": "Chicago, IL (remote)",
 			"dates": "June 2016 - Dec 2022",
 			"role": "Principal Consultant & Senior Developer",
 			"highlights": [
@@ -83,7 +86,8 @@
 			]
 		},
 		{
-			"company": "MakerSquare (now Galvanize) - Austin, TX",
+			"company": "MakerSquare (now Galvanize)",
+			"location": "Austin, TX",
 			"dates": "Feb 2016 - May 2016",
 			"role": "Student Full Stack Bootcamp Instructor",
 			"highlights": [

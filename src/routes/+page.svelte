@@ -50,7 +50,10 @@
 				<h2>Experience</h2>
 				{#each resume.experience as job}
 					<div class="job-details sub-section">
-						<h3>{job.company}</h3>
+						<span class="company">
+							<h3>{job.company}</h3>
+							<small>{job.location}</small>
+						</span>
 						<div>{job.role}</div>
 						<div>{job.dates}</div>
 					</div>
@@ -151,7 +154,8 @@
 			display: none;
 		}
 		main.row {
-			display: block;
+			display: flex;
+			flex-direction: column-reverse;
 		}
 		.social-link {
 			display: block;
@@ -180,7 +184,12 @@
 		flex-basis: 20ch;
 		flex-shrink: 0;
 	}
-
+	.company {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		gap: 10px;
+	}
 	.skills {
 		display: inline-flex;
 		flex-wrap: wrap;
