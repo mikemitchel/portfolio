@@ -54,10 +54,12 @@
 							<h3>{job.company}</h3>
 							<small>{job.location}</small>
 						</span>
-						<h4>{job.role}</h4>
-						<div>{job.dates}</div>
+						<span>
+							<h4>{job.role}</h4>
+							<small>({job.dates})</small></span
+						>
 					</div>
-					<div class="sub-section">
+					<div class="highlights sub-section">
 						{#each job.highlights as highlight}
 							<div class="sub-section">{highlight.item}</div>
 						{/each}
@@ -109,7 +111,8 @@
 	h1,
 	h2,
 	h3,
-	h4 {
+	h4,
+	h5 {
 		margin: 0px;
 	}
 	h4 {
