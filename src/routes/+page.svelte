@@ -54,10 +54,9 @@
 							<h3>{job.company}</h3>
 							<small>{job.location}</small>
 						</span>
-						<span>
-							<h4>{job.role}</h4>
-							<small>({job.dates})</small></span
-						>
+
+						<h4>{job.role}</h4>
+						<small>({job.dates})</small>
 					</div>
 					<div class="highlights sub-section">
 						{#each job.highlights as highlight}
@@ -66,7 +65,7 @@
 						{#each job.projects as project}
 							<div class="sub-section">
 								<div class="project">
-									<h4>Project</h4>
+									<h4 class="project">Project</h4>
 									{project.details}
 								</div>
 								<div class="stack">
@@ -118,7 +117,7 @@
 	h4 {
 		float: left;
 	}
-	h4::after {
+	h4.project::after {
 		content: ':\00a0';
 	}
 	.social-link {
@@ -192,6 +191,10 @@
 		flex-direction: row;
 		align-items: baseline;
 		gap: 10px;
+	}
+	.job-details {
+		display: flex;
+		flex-direction: column;
 	}
 	.skills {
 		display: inline-flex;
