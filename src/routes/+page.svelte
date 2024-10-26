@@ -65,11 +65,11 @@
 						{#each job.projects as project}
 							<div class="sub-section">
 								<div class="project">
-									<h4 class="project">Project</h4>
+									<h4 class="semi-colon">Project</h4>
 									{project.details}
 								</div>
 								<div class="stack">
-									<h4>Stack</h4>
+									<h4 class="semi-colon">Stack</h4>
 									{project.stack}
 								</div>
 							</div>
@@ -110,14 +110,13 @@
 	h1,
 	h2,
 	h3,
-	h4,
-	h5 {
+	h4 {
 		margin: 0px;
 	}
 	h4 {
 		float: left;
 	}
-	h4.project::after {
+	.semi-colon::after {
 		content: ':\00a0';
 	}
 	.social-link {
