@@ -7,12 +7,12 @@
 		{
 			"name": "LinkedIn",
 			"link": "https://linkedin.com/in/mikemitchel",
-			"icon": "linkedin.png"
+			"icon": "linkedin"
 		},
 		{
 			"name": "Github",
 			"link": "https://github.com/mikemitchel",
-			"icon": "github.png"
+			"icon": "github"
 		}
 	],
 	"experience": [

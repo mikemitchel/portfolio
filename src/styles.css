@@ -1,19 +1,10 @@
-@import '@fontsource/fira-mono';
-
 * {
 	box-sizing: border-box;
 }
 
 :root {
-	/* font-body: 'Arial';
-	font-mono: '"Fira Mono", monospace'; */
+	font-family: 'Arial';
 	font-size: '16px';
-}
-
-@media (max-width: 700px) {
-	:root {
-		font-size: calc(var(--font-size) + 2px);
-	}
 }
 
 body {
@@ -32,5 +23,38 @@ a {
 @media (hover: hover) {
 	a:hover {
 		text-decoration: underline;
+	}
+}
+
+@media (max-width: 700px) {
+	:root {
+		font-size: calc(var(--font-size) + 2px);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: rgb(10, 41, 51);
+		--background-select: rgb(252, 244, 220);
+		--color-select: rgb(25, 30, 36);
+		--color: rgb(129, 144, 144);
+		--link: rgb(165, 119, 6);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: rgb(252, 244, 220);
+		--background-select: rgb(10, 41, 51);
+		--color-select: rgb(129, 144, 144);
+		--color: rgb(25, 30, 36);
+		--link: rgb(165, 119, 6);
+	}
+}
+
+@media print {
+	body {
+		background: white;
+		color: black;
 	}
 }
