@@ -53,6 +53,7 @@ a {
 }
 
 @media print {
+	a,
 	body {
 		background: white;
 		color: black;
