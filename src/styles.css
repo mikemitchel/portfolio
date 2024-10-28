@@ -1,13 +1,29 @@
-@import '@fontsource/fira-mono';
-
 * {
 	box-sizing: border-box;
 }
 
 :root {
-	font-size: var(--font-size);
-	font-family: var(--font-body);
-	color: var(--color-text);
+	font-family: 'Arial';
+	font-size: '16px';
+}
+
+body {
+	min-height: 100dvh;
+	margin: 20px;
+	background: var(--background);
+	color: var(--color);
+	background-size: 100dvw 100dvh;
+}
+
+a {
+	color: var(--link);
+	text-decoration: none;
+}
+
+@media (hover: hover) {
+	a:hover {
+		text-decoration: underline;
+	}
 }
 
 @media (max-width: 700px) {
@@ -16,20 +32,29 @@
 	}
 }
 
-body {
-	min-height: 100dvh;
-	margin: 20px;
-	background-color: var(--color-bg-light);
-	background-size: 100dvw 100dvh;
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: rgb(10, 41, 51);
+		--background-select: rgb(252, 244, 220);
+		--color-select: rgb(25, 30, 36);
+		--color: rgb(129, 144, 144);
+		--link: rgb(165, 119, 6);
+	}
 }
 
-a {
-	color: rgb(var(--color-text));
-	text-decoration: none;
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: rgb(252, 244, 220);
+		--background-select: rgb(10, 41, 51);
+		--color-select: rgb(129, 144, 144);
+		--color: rgb(25, 30, 36);
+		--link: rgb(165, 119, 6);
+	}
 }
 
-@media (hover: hover) {
-	a:hover {
-		text-decoration: underline;
+@media print {
+	body {
+		background: white;
+		color: black;
 	}
 }

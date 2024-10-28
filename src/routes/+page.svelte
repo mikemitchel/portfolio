@@ -1,25 +1,8 @@
 <script lang="ts">
 	import '../styles.css'
-
 	let { data } = $props()
-	const theme = data.theme
 	const resume = data.resume
-
-	let themeStyles = $derived(`
-	<style class="theme-styles">
-		:root {
-			${Object.keys(theme).reduce((str: string, key: string) => {
-				return str + `--${key}: ${theme[key]};` + '\n'
-			}, '')}
-		}
-	</style>
-	`)
 </script>
-
-<svelte:head>
-	<!-- eslint-disable-next-line -->
-	{@html themeStyles}
-</svelte:head>
 
 <div class="main">
 	<div class="header">
@@ -31,7 +14,7 @@
 		<div class="socials">
 			{#each resume.socials as social}
 				<a class="social-link" href={social.link} target="_blank">
-					<img alt="icon" class="icon" src={social.icon} />
+					<img alt="icon" class={`icon ${social.icon}-icon`} src={`${social.icon}.png`} />
 					<span class="link">{social.link}</span>
 				</a>
 			{/each}
@@ -148,6 +131,12 @@
 
 	.icon {
 		width: 1em;
+	}
+	@media (prefers-color-scheme: dark) {
+		img.github-icon {
+			-webkit-filter: invert(1);
+			filter: invert(1);
+		}
 	}
 
 	@media (max-width: 700px) {
