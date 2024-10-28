@@ -1,25 +1,8 @@
 <script lang="ts">
-	import '../styles.css'
-
 	let { data } = $props()
-	const theme = data.theme
 	const resume = data.resume
-
-	let themeStyles = $derived(`
-	<style class="theme-styles">
-		:root {
-			${Object.keys(theme).reduce((str: string, key: string) => {
-				return str + `--${key}: ${theme[key]};` + '\n'
-			}, '')}
-		}
-	</style>
-	`)
+	console.log('data', data.theme)
 </script>
-
-<svelte:head>
-	<!-- eslint-disable-next-line -->
-	{@html themeStyles}
-</svelte:head>
 
 <div class="main">
 	<div class="header">

@@ -5,9 +5,9 @@
 }
 
 :root {
-	font-size: var(--font-size);
-	font-family: var(--font-body);
-	color: var(--color-text);
+	/* font-body: 'Arial';
+	font-mono: '"Fira Mono", monospace'; */
+	font-size: '16px';
 }
 
 @media (max-width: 700px) {
@@ -19,12 +19,13 @@
 body {
 	min-height: 100dvh;
 	margin: 20px;
-	background-color: var(--color-bg-light);
+	background: var(--background);
+	color: var(--color);
 	background-size: 100dvw 100dvh;
 }
 
 a {
-	color: rgb(var(--color-text));
+	color: var(--link);
 	text-decoration: none;
 }
 
