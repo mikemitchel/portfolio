@@ -17,6 +17,29 @@
 	],
 	"experience": [
 		{
+			"company": "Dwell Fractional LLC",
+			"location": "New Buffalo, MI",
+			"dates": "Dec 2024 - Present",
+			"role": "Co-Founder, Chief Technical Officer, Chief of Sales",
+			"highlights": [
+				{
+					"item": "Fractional co-owernship of luxury vacations homes."
+				}
+			],
+			"projects": [
+				{
+					"name": "8 Home Share Calendar Tool",
+					"stack": "Svelte, Typescript, CSS3, HTML5",
+					"details": "Create an automated tool to generate a calendar for a fractional vacation home, based on a complex set of rotating rules"
+				},
+				{
+					"name": "Sales & Marketing",
+					"stack": "Generative AI, Social Media, Print and Web Marketing",
+					"details": "Create an engaging media presence to educate and close sales with local real estate agents and clients, in addition to face-to-face sales and marketing"
+				}
+			]
+		},
+		{
 			"company": "Nomadik Labs LLC",
 			"location": "Ann Arbor, MI",
 			"dates": "Sep 2023 - Present",
@@ -122,6 +145,7 @@
 		"GIT",
 		"HTML5",
 		"CSS3",
+		"Generative AI Tools",
 		"Jest",
 		"NodeJS",
 		"CI/CD",
@@ -153,11 +177,5 @@
 		"Sprint Planning",
 		"Lifelong Learner"
 	],
-	"education": [
-		{
-			"school": "Makersquare Full Stack JS Bootcamp",
-			"location": "Austin, TX",
-			"study": "60 hr/week intensive Web Development bootcamp that involved best practices fundamentals and building a greenfield project utilizing the YouTube API."
-		}
-	]
+	"education": []
 }
