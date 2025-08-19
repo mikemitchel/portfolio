@@ -1,7 +1,7 @@
 {
 	"bio": {
 		"name": "Mike Mitchel",
-		"intro": "Highly skilled Principal Consultant & Senior Developer with 10 years experience of following a passion for product discovery, project planning, team management, and crafting robust & easy to maintain code that delivers exceptional value."
+		"intro": "Highly skilled Principal Consultant & Full Stack Engineer with 10 years experience of following a passion for product discovery, project planning, team management, and crafting robust & easy to maintain code that delivers exceptional value."
 	},
 	"socials": [
 		{
@@ -53,23 +53,23 @@
 				{
 					"name": "CALI.org",
 					"stack": "CanJS, NodeJS, PHP, Bootstrap, jQuery, AMP stack",
-					"details": "Added Authoring feature to guide best authoring practices, while implementing type protections to prevent errors during document assembly."
+					"details": "Authoring Guideline Feature: Added type-safe authoring controls (e.g., form validation, templating safeguards) to improve document assembly reliability. Stack: CanJS, Node.js, PHP."
 				},
 				{
 					"name": "BCBC.bike Shop App",
 					"stack": "Sveltekit, Typescript, CSS",
-					"details": "Greenfield Sveltekit Full Stack project to create an improved Shop App for bike co-op non-profit, with focus on mobile first responsive design and usability."
+					"details": "Delivered mobile-first, responsive design with TypeScript and modern UI/UX best practices."
 				}
 			]
 		},
 		{
-			"company": "Career Break",
+			"company": "Sabbatical / Career Break",
 			"location": "Pacific NW",
 			"dates": "Dec 2022 - Sept 2023",
 			"role": "Health & Well-Being / Freelance",
 			"highlights": [
 				{
-					"item": "I took a voluntary ~8-month sabbatical to focus on family and self and cannot recommend this practice enough. Want to talk about my experience? Please feel free to shoot me a message as I would love to chat about it."
+					"item": "Focus on personal well-being, renewed creative energy, and sharpened mission alignment."
 				}
 			],
 			"projects": []
@@ -139,15 +139,14 @@
 		}
 	],
 	"skills": [
-		"Typescript",
-		"Javascript",
+		"JavaScript (CanJS, SvelteKit, TypeScript)",
+		"NodeJS",
 		"PHP",
 		"GIT",
 		"HTML5",
 		"CSS3",
 		"Generative AI Tools",
 		"Jest",
-		"NodeJS",
 		"CI/CD",
 		"ReactJS",
 		"jQuery",
@@ -165,6 +164,7 @@
 		"AWS S3"
 	],
 	"softSkills": [
+		"Entrepreneurship",
 		"Consulting",
 		"Code Review",
 		"Mentoring",
