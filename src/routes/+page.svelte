@@ -8,7 +8,7 @@
 	<div class="header">
 		<div class="name">
 			<h1>Mike Mitchel</h1>
-			<small>Principal Consultant & Senior Software Developer</small>
+			<small>Principal Consultant | Full Stack Engineer</small>
 		</div>
 
 		<div class="socials">
