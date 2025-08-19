@@ -39,6 +39,14 @@ a {
 		--color-select: rgb(25, 30, 36);
 		--color: rgb(129, 144, 144);
 		--link: rgb(165, 119, 6);
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: rgb(160, 175, 175);
+		}
 	}
 }
 
