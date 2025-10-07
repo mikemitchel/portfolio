@@ -34,29 +34,29 @@ a {
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background: rgb(10, 41, 51);
-		--background-select: rgb(252, 244, 220);
-		--color-select: rgb(25, 30, 36);
-		--color: rgb(129, 144, 144);
-		--link: rgb(165, 119, 6);
+		--background: #263238;
+		--background-select: #546E7A;
+		--color-select: #ECEFF1;
+		--color: #ECEFF1;
+		--link: #FFD740;
 		h1,
 		h2,
 		h3,
 		h4,
 		h5,
 		h6 {
-			color: rgb(160, 175, 175);
+			color: #FFFFFF;
 		}
 	}
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--background: rgb(252, 244, 220);
-		--background-select: rgb(10, 41, 51);
-		--color-select: rgb(129, 144, 144);
-		--color: rgb(25, 30, 36);
-		--link: rgb(165, 119, 6);
+		--background: #ECEFF1;
+		--background-select: #B0BEC5;
+		--color-select: #263238;
+		--color: #263238;
+		--link: #546E7A;
 	}
 }
 

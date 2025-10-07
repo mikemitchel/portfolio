@@ -1,7 +1,7 @@
 {
 	"bio": {
 		"name": "Mike Mitchel",
-		"intro": "Highly skilled Principal Consultant & Full Stack Engineer with 10 years experience of following a passion for product discovery, project planning, team management, and crafting robust & easy to maintain code that delivers exceptional value."
+		"intro": "Highly skilled Principal Consultant & Full Stack Engineer with 10 years of experience in product discovery, project planning, team management, and crafting robust & easy to maintain code that delivers exceptional value."
 	},
 	"socials": [
 		{
@@ -23,7 +23,7 @@
 			"role": "Co-Founder | Chief Technical Officer | Chief of Sales",
 			"highlights": [
 				{
-					"item": "Fractional co-owernship of luxury vacations homes."
+					"item": "Fractional co-ownership of luxury vacation homes."
 				}
 			],
 			"projects": [
@@ -69,7 +69,7 @@
 			"role": "Health & Well-Being | Freelance",
 			"highlights": [
 				{
-					"item": "Focus on personal well-being, renewed creative energy, and sharpened mission alignment. Can't recommend this practice enough, and love to talk about it."
+					"item": "Focus on personal well-being, renewed creative energy, and sharpened mission alignment. Happy to discuss the benefits of career breaks and how they contribute to long-term professional growth."
 				}
 			],
 			"projects": []
@@ -127,7 +127,8 @@
 			]
 		},
 		{
-			"company": "Lab9 Inc - Chicago, IL",
+			"company": "Lab9 Inc",
+			"location": "Chicago, IL",
 			"dates": "June 2009 - June 2016",
 			"role": "Founder | Principal Consultant",
 			"highlights": [
@@ -145,7 +146,7 @@
 		"GIT",
 		"HTML5",
 		"CSS3",
-		"Generative AI Tools",
+		"Generative AI (ChatGPT, Claude, Copilot, Prompt Engineering)",
 		"Jest",
 		"CI/CD",
 		"ReactJS",
