@@ -20,6 +20,11 @@ a {
 	text-decoration: none;
 }
 
+a:focus-visible {
+	outline: 2px solid var(--link);
+	outline-offset: 2px;
+}
+
 @media (hover: hover) {
 	a:hover {
 		text-decoration: underline;

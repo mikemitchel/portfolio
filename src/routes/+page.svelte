@@ -4,8 +4,9 @@
 	const resume = data.resume
 </script>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <div class="main">
-	<div class="header">
+	<header class="header">
 		<div class="name">
 			<h1>Mike Mitchel</h1>
 			<small>Principal Consultant | Full Stack Engineer</small>
@@ -13,24 +14,24 @@
 
 		<div class="socials">
 			{#each resume.socials as social}
-				<a class="social-link" href={social.link} target="_blank">
-					<img alt="icon" class={`icon ${social.icon}-icon`} src={`${social.icon}.png`} />
+				<a class="social-link" href={social.link} target="_blank" rel="noopener noreferrer" aria-label={`Visit my ${social.icon} profile`}>
+					<img alt={`${social.icon} logo`} class={`icon ${social.icon}-icon`} src={`${social.icon}.png`} />
 					<span class="link">{social.link}</span>
 				</a>
 			{/each}
 		</div>
-	</div>
+	</header>
 
-	<div class="row">
+	<section class="row" aria-label="Biography">
 		<div class="bio">
 			<div class="sub-section">{resume.bio.intro}</div>
 		</div>
-	</div>
+	</section>
 
-	<main class="row">
+	<main id="main-content" class="row">
 		<div class="left column">
-			<div class="experience section">
-				<h2>Experience</h2>
+			<section class="experience section" aria-labelledby="experience-heading">
+				<h2 id="experience-heading">Experience</h2>
 				{#each resume.experience as job}
 					<div class="job-details sub-section">
 						<span class="company">
@@ -59,11 +60,11 @@
 						{/each}
 					</div>
 				{/each}
-			</div>
+			</section>
 		</div>
 		<div class="right column">
-			<div class="section">
-				<h2>Tech Skills</h2>
+			<section class="section" aria-labelledby="tech-skills-heading">
+				<h2 id="tech-skills-heading">Tech Skills</h2>
 				<div class="skills sub-section">
 					{#each resume.skills as skill}
 						<div class="skill">
@@ -71,9 +72,9 @@
 						</div>
 					{/each}
 				</div>
-			</div>
-			<div class="section">
-				<h2>Soft Skills</h2>
+			</section>
+			<section class="section" aria-labelledby="soft-skills-heading">
+				<h2 id="soft-skills-heading">Soft Skills</h2>
 				<div class="skills sub-section">
 					{#each resume.softSkills as softSkill}
 						<div class="skill">
@@ -81,12 +82,26 @@
 						</div>
 					{/each}
 				</div>
-			</div>
+			</section>
 		</div>
 	</main>
 </div>
 
 <style>
+	.skip-link {
+		position: absolute;
+		top: -40px;
+		left: 0;
+		background: var(--link);
+		color: var(--background);
+		padding: 8px;
+		text-decoration: none;
+		z-index: 100;
+	}
+	.skip-link:focus {
+		top: 0;
+	}
+
 	h1 {
 		align-self: center;
 	}
